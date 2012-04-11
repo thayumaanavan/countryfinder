@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">CountryfinderGame</string>
+    <string name="help">Help screen</string>
+    
+    <string name="splash">splash screen</string>
+    <string name="menu">Main menu screen</string>
+    <string name="game">Game screen</string>
+    <string name="score">Score screen</string>
+    <string name="save">Save screen</string>
+    <string name="gameover">GameOver screen</string>
+</resources>

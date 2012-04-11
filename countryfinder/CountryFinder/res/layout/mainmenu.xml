@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/relativeLayout1" android:layout_weight="0.23"></RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout2" android:layout_height="match_parent">
+        <TextView android:text="HollyWood" android:textSize="20pt" android:id="@+id/textView1" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="33dp"></TextView>
+        
+     	
+     	<RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/relativeLayout3" android:layout_centerVertical="true" android:layout_alignLeft="@+id/textView1" android:layout_marginLeft="38dp"></RelativeLayout>
+     	<TextView android:text="PLAY" android:shadowDx="3" android:textSize="18pt" android:shadowDy="3" android:id="@+id/TextView01" android:layout_height="wrap_content" android:layout_width="wrap_content" android:shadowRadius="5" android:layout_above="@+id/textView02" android:layout_toRightOf="@+id/relativeLayout3" android:layout_marginBottom="29dp" android:clickable="true" android:onClick="onClick"></TextView>
+     	<TextView android:text="HELP" android:shadowDx="3" android:textSize="18pt" android:shadowDy="3" android:id="@+id/textView02" android:layout_height="wrap_content" android:layout_width="wrap_content" android:shadowRadius="5" android:layout_alignBottom="@+id/relativeLayout3" android:layout_alignRight="@+id/TextView01" android:clickable="true" android:onClick="onClick	"></TextView>
+     	<TextView android:shadowDx="3" android:textSize="18pt" android:shadowDy="3" android:id="@+id/TextView03	" android:layout_height="wrap_content" android:layout_width="wrap_content" android:shadowRadius="5" android:layout_below="@+id/textView02" android:layout_alignLeft="@+id/TextView01" android:layout_marginTop="34dp" android:clickable="true" android:onClick="onClick	" android:text="SCORE"></TextView>
+    </RelativeLayout>
+</LinearLayout>

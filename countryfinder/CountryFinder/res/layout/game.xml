@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:text="HollyWood" android:layout_width="wrap_content" android:textSize="20pt" android:layout_height="wrap_content" android:layout_marginTop="33dp" android:id="@+id/textView1" android:textStyle="bold"></TextView>
+    <RelativeLayout android:layout_width="match_parent" android:id="@+id/relativeLayout1" android:layout_height="match_parent">
+        <Button android:id="@+id/button1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignTop="@+id/editText1" android:layout_toRightOf="@+id/editText1" android:layout_marginLeft="28dp" android:text="submit"></Button>
+        <TextView android:id="@+id/textView2" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_marginLeft="23dp" android:layout_marginTop="58dp" android:editable="true" android:singleLine="true"></TextView>
+        <EditText android:hint="Enter a char" android:id="@+id/editText1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/textView2" android:layout_alignLeft="@+id/textView2" android:layout_marginTop="61dp" android:maxLength="1" android:inputType="text"></EditText>
+        <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_alignParentTop="true" android:layout_alignLeft="@+id/button1" android:text="Chance"></TextView>
+        <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:maxLength="2" android:text="TextView" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/textView3" android:layout_marginLeft="21dp" android:editable="true"></TextView>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string-array name="country">
+ 		<item>"afghanistan"</item>
+        <item>"srilanka"</item>
+        <item>"india"</item>
+        <item>"bangladesh"</item>
+        <item>"japan"</item>
+        <item>"china"</item>
+        <item>"armenia"</item>
+        <item>"azerbaijan"</item>
+        <item>"bahrain"</item>
+        <item>"brunei"</item>
+        <item>"bhutan"</item>
+        <item>"cambodia"</item>
+        <item>"easttimor"</item>
+        <item>"indonesia"</item>
+        <item>"iran"</item>
+        <item>"iraq"</item>
+        <item>"israel"</item>
+        <item>"jordan"</item>
+        <item>"kazakhstan"</item>
+        <item>"tajikistan"</item>
+ </string-array>
+</resources>
