@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
  <string-array name="country">
+     	<item></item>
  		<item>"afghanistan"</item>
         <item>"srilanka"</item>
         <item>"india"</item>

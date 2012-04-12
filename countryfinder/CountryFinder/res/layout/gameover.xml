@@ -33,23 +33,22 @@
             android:text="Play again" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/button1"
             android:layout_alignBottom="@+id/button1"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="23dp"
-            android:text="Quit" />
+            android:layout_toRightOf="@+id/textView1"
+            android:text="Main Menu" />
 
-        <Button
-            android:id="@+id/button3"
+        <TextView
+            android:id="@+id/res"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/button2"
-            android:layout_marginRight="34dp"
-            android:layout_toLeftOf="@+id/button2"
-            android:text="Main Menu" />
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginBottom="84dp"
+            android:layout_toLeftOf="@+id/button3"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
     </RelativeLayout>
 

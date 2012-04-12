@@ -2,7 +2,7 @@
 <resources>
 	<string name="app_name">CountryfinderGame</string>
     <string name="help">Help screen</string>
-    
+   
     <string name="splash">splash screen</string>
     <string name="menu">Main menu screen</string>
     <string name="game">Game screen</string>

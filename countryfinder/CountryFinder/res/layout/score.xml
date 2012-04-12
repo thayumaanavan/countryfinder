@@ -45,19 +45,11 @@
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/button1"
-            android:layout_alignRight="@+id/textView1"
-            android:text="Main Menu" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/button1"
             android:layout_alignBottom="@+id/button1"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="22dp"
-            android:text="quit" />
+            android:layout_marginRight="55dp"
+            android:text="Main Menu" />
 
     </RelativeLayout>
 

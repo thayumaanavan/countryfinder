@@ -16,11 +16,11 @@ public class GameActivity extends Activity {
     /** Called when the activity is first created. */
 	Button submit;
 	EditText character;
-	String[] names;
+ static String[] names;
 	char[] str;
 	 String s;
 	TextView text,life;
-	int n;
+	 static int n;
 	static int chance;
 	int count;
 	 
@@ -42,11 +42,12 @@ public class GameActivity extends Activity {
         names=res.getStringArray(R.array.country);
         submit=(Button)findViewById(R.id.button1);
         character=(EditText)findViewById(R.id.editText1);
+        
         text=(TextView)findViewById(R.id.textView2);
         life=(TextView)findViewById(R.id.textView4);
         chance=9;
         Random rand = new Random();
-        n = rand.nextInt(5)+1;
+        n = rand.nextInt(20)+1;
         text.clearComposingText();
         str=new char[names[n].length()];
         for(int i=0;i<names[n].length();i++)
@@ -63,7 +64,11 @@ public class GameActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				
+				if(character.getText().length()==0)
+				{
+					Toast.makeText(getApplicationContext(), "Invalid Input",Toast.LENGTH_SHORT).show();
+					return;
+				}
 			
 			    char ch=(char)character.getText().charAt(0);
 			    character.setText("");	
@@ -92,8 +97,9 @@ public class GameActivity extends Activity {
 					}
 				if(chance==0)
 					{
-					
+						
 						startActivity(new Intent(GameActivity.this,GameOverActivity.class));
+					    
 						//GameActivity.this.finish();
 					}
 			if(win(str,names[n].length())==1)

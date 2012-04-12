@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class ScoreActivity extends Activity {
     /** Called when the activity is first created. */
 	TextView text;
-	Button play,quit;
+	Button play,menu;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class ScoreActivity extends Activity {
        Toast.makeText(getApplicationContext(),""+score,Toast.LENGTH_SHORT).show();
      
        play=(Button)findViewById(R.id.button1);
-       quit=(Button)findViewById(R.id.button2);
+       menu=(Button)findViewById(R.id.button3);
     play.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -34,15 +34,15 @@ public class ScoreActivity extends Activity {
 				
 			}
 		});
-       quit.setOnClickListener(new View.OnClickListener() {
+    menu.setOnClickListener(new View.OnClickListener() {
+		
+		@Override
+		public void onClick(View arg0) {
+			// TODO Auto-generated method stub
+			startActivity(new Intent(ScoreActivity.this,MainMenuActivity.class));
+			ScoreActivity.this.finish();
 			
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				
-				ScoreActivity.this.finish();
-				
-			}
-		});
+		}
+	});
     }
 }
